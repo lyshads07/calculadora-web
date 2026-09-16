@@ -42,3 +42,9 @@ h1 {
 .btn-igual:hover { background: #22c55e; }
 .btn-cero { grid-column: span 2; }
 
+.historial { margin-top: 18px; border-top: 1px solid #334155; padding-top: 12px; }
+.historial-header { display: flex; justify-content: space-between; align-items: center; }
+.historial-header h2 { font-size: 14px; color: #94a3b8; }
+.btn-limpiar-historial { font-size: 12px; cursor: pointer; background: none; border: none; color: #f87171; }
+.lista-historial { list-style: none; margin-top: 10px; max-height: 120px; overflow-y: auto; font-size: 13px; }
+.lista-historial li { padding: 6px 4px; border-bottom: 1px solid #334155; color: #cbd5e1; }
