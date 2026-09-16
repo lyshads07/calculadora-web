@@ -1,29 +1,44 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
  
 body {
-  font-family: Arial, sans-serif;
-  background: #eeeeee;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #1f2937, #111827);
   display: flex;
   justify-content: center;
-  padding: 30px 10px;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 10px;
 }
  
 .calculadora {
   width: 320px;
-  background: #ffffff;
-  border: 1px solid #cccccc;
-  padding: 15px;
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  color: #f1f5f9;
 }
  
-h1 { font-size: 18px; margin-bottom: 10px; text-align: center; }
+h1 {
+  font-size: 18px; margin-bottom: 15px; text-align: center;
+  letter-spacing: 1px; color: #94a3b8; text-transform: uppercase;
+}
  
-.pantalla { background: #dddddd; padding: 10px; margin-bottom: 10px; text-align: right; }
-.operacion-anterior { font-size: 14px; color: #555555; min-height: 18px; }
-.pantalla-principal { font-size: 28px; }
+.pantalla { background: #0f172a; border-radius: 10px; padding: 16px; margin-bottom: 15px; text-align: right; }
+.operacion-anterior { font-size: 14px; color: #64748b; min-height: 18px; }
+.pantalla-principal { font-size: 32px; font-weight: 600; }
  
-.teclado { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
-.btn { padding: 14px 0; font-size: 16px; border: 1px solid #cccccc; background: #f5f5f5; cursor: pointer; }
-.btn-numero { background: #ffffff; }
-.btn-operador { background: #e0e0e0; }
-.btn-igual { background: #cccccc; }
+.teclado { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.btn {
+  padding: 16px 0; font-size: 17px; border: none; border-radius: 10px;
+  background: #334155; color: #f1f5f9; cursor: pointer;
+  transition: transform 0.08s ease, background 0.15s ease;
+}
+.btn:hover { background: #475569; }
+.btn:active { transform: scale(0.95); }
+.btn-operador { background: #f59e0b; color: #1e293b; font-weight: 600; }
+.btn-operador:hover { background: #fbbf24; }
+.btn-igual { background: #16a34a; font-weight: 600; }
+.btn-igual:hover { background: #22c55e; }
 .btn-cero { grid-column: span 2; }
+
